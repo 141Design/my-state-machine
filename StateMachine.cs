@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-//状態の初期化メソッド、実行メソッド、アクションと遷移先テーブルを登録する
+//状態を登録->初期状態を指定->実行
 //動詞stringを入力すると別の状態に遷移する
 
 namespace SimpleStateMachine
