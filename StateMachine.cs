@@ -47,7 +47,7 @@ namespace SimpleStateMachine
             return -2;//状態が登録されていない
         }
 
-        //指定の状態に遷移する
+        //指定の状態にジャンプする
         public int Jump(string stateName)
         {
             if (StateTable.ContainsKey(stateName))
@@ -66,6 +66,6 @@ namespace SimpleStateMachine
 
     public class State
     {
-        public Func<string,string, string> Process { get; set; }// Process 現在の状態,イベント文字列, 戻り値：次の状態
+        public Func<string, string, string> Process { get; set; }// Process 現在の状態,イベント文字列, 戻り値：次の状態
     }
 }
